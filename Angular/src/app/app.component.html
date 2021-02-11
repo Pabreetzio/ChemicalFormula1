@@ -4,6 +4,11 @@
     Welcome to {{ title }}
   </h1>
   <h2> {{ subtitle }}</h2>
+  <input type="text" [(ngModel)]="chemicalEquation" />
+  <ul >
+    <li *ngFor="let chemicalElement of tableOfElements">{{chemicalElement.symbol}}</li>
+  </ul>
+  <button (click)="debug()">debug</button>
 </div>
 
 
